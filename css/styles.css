@@ -1,0 +1,269 @@
+body {
+	text-align: center;
+}
+
+h1,
+h2,
+h3,
+#title,
+#features,
+#pricing,
+#cta {
+	font-family: 'Montserrat', sans-serif;
+}
+
+/* Containers */
+.coloured-section {
+	background-color: #ff4c68;
+	color: white;
+}
+
+.white-section {
+	background-color: white;
+	color: black;
+}
+
+/* Navbar */
+.navbar {
+	padding: 0 0 4.5rem;
+}
+
+.nav-container {
+	padding: 0;
+}
+
+.navbar-brand {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 2.5rem;
+	font-weight: bold;
+}
+
+.nav-item {
+	margin: 0 18px;
+}
+
+.nav-link {
+	font-family: 'Montserrat-Light', sans-serif;
+	font-size: 1.2rem;
+}
+
+/* Title*/
+#title {
+	padding: 3% 15% 14%;
+}
+
+.main-heading {
+	text-align: left;
+	font-weight: 900;
+	font-size: 3.5rem;
+	line-height: 1.5;
+}
+
+.title-img-box {
+	position: relative;
+}
+
+.title-img {
+	width: 60%;
+	transform: rotate(25deg);
+	position: absolute;
+	right: 20%;
+	transition: all 500ms;
+}
+
+.title-download {
+	margin: 5% 3% 5% 0;
+	white-space: nowrap;
+}
+
+.download-btn {
+	margin: 2% 2% 2% 0;
+}
+
+/* Features */
+#features {
+	padding: 7% 15%;
+	font-size: 1.25rem;
+	position: relative;
+}
+
+.f-box {
+	padding: 5%;
+}
+
+.f-header {
+	margin-top: 1.5rem;
+	font-weight: bold;
+}
+
+.f-text {
+	color: gray;
+}
+
+/* Feature Icons */
+.f-icon {
+	transition: all 500ms;
+	color: #ef8177;
+	margin-bottom: 1rem;
+}
+
+.f-icon:hover {
+	transform: scale(1.05);
+	transition: all 300ms;
+	color: #ff4c68;
+}
+
+/* Testomonials */
+#testimonials {
+	padding: 7% 5%;
+	background-color: #ef8177;
+	color: #202020;
+	transition: all 200ms;
+}
+
+.test-text {
+	font-size: 3rem;
+	font-weight: bold;
+}
+
+.test-img {
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	margin: 20px;
+}
+
+.test-author {
+	font-weight: bold;
+	color: #3d3d3d;
+}
+
+.carousel-item {
+	background-color: #ef8177;
+	padding: 0 10%;
+}
+
+/* Press */
+#press {
+	background-color: #ef8177;
+	padding: 3%;
+}
+
+#press > img {
+	width: 15%;
+	margin: 20px 20px 50px;
+}
+
+/* Pricing */
+#pricing {
+	padding: 5% 9% 7%;
+}
+
+.pricing-header {
+	font-size: 3rem;
+	font-weight: bold;
+}
+
+.pricing-text {
+	font-style: oblique;
+}
+
+.pricing-card-title {
+	font-weight: bold;
+}
+
+.pricing-card {
+	margin: auto;
+	padding: 3% 2%;
+}
+
+.card {
+	max-width: 376.2px;
+	margin: auto;
+	border: 0;
+	box-shadow: 1.5px 1.5px 5px gray;
+	transition: all 300ms;
+}
+
+.card:hover {
+	transform: scale(1.02);
+	transition: all 300ms;
+	box-shadow: 2px 2px 5px 2px gray;
+}
+
+/* Call to Action */
+#cta {
+	padding: 7% 15%;
+}
+
+.cta-header {
+	font-size: 3rem;
+	font-weight: bold;
+	line-height: 1.5;
+	margin-bottom: 2.5rem;
+}
+
+/* Footer */
+#footer {
+	padding: 7% 15%;
+}
+
+.footer-icon {
+	margin: 0 1rem 1rem;
+	transition: all 300ms;
+}
+
+.footer-icon:hover {
+	transition: all 300ms;
+	color: #ff4c68;
+}
+
+.footer-copyright {
+	color: gray;
+}
+
+/* Media Queries
+	@media <type> <feature> {
+		Change something eg. layout, to make the website more user-friendly 
+	}
+	eg. 
+	@media screen (max-width: 900px) {
+		h1 {
+			font-size: 60px;
+		}
+	}
+} */
+
+@media (max-width: 1319px) {
+	.main-heading {
+		text-align: center;
+		transition: all 500ms;
+	}
+
+	.title-img-box {
+		padding-left: 10%;
+	}
+
+	.title-img {
+		position: static;
+		transform: rotate(0);
+		transition: all 500ms;
+	}
+}
+
+@media (max-width: 1250px) {
+	.title-img {
+		width: 85%;
+	}
+}
+
+@media (max-width: 992px) {
+	.title-img-box {
+		padding-left: 0;
+	}
+
+	.title-img {
+		width: 50%;
+		transition: all 700ms;
+	}
+}
